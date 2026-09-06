@@ -1,0 +1,59 @@
+generated: '2026-09-06'
+method: probed
+source: >-
+  Direct HTTPS probes of the RFC 8615 well-known paths on every host this record knows
+  (the registrable domain acelot.com and its www host). Acelot publishes no API host, no
+  developer/docs host and no OpenAPI servers[] block, so those host classes do not exist
+  for this record.
+note: >-
+  Every probed path returned 404. Squarespace answers /.well-known/security.txt with a JSON
+  404 body ({"message":"security.txt not found"}) and every other /.well-known/* path with the
+  site's 404 HTML page. No document was served, so NO WellKnown or SecurityTxt pointer is
+  emitted in apis.yml — this file records a verified absence, not a presence.
+hosts:
+- host: acelot.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: www.acelot.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null

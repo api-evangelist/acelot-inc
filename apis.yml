@@ -1,7 +1,17 @@
 aid: acelot-inc
 name: Acelot, Inc.
-description: 'Acelot, Inc. is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Acelot, Inc. is a clinical-stage biopharmaceutical company headquartered in South San Francisco,
+  California, developing first-in-class small-molecule therapies for neurodegenerative diseases with
+  high unmet need. Its lead candidate, ACE-2223, is designed to target misfolded and aggregated
+  TDP-43 and restore the protein's healthy form and function, addressing pathology central to
+  amyotrophic lateral sclerosis (ALS) and frontotemporal lobar degeneration (FTLD). Acelot's
+  discovery work is powered by Resolute, an internal integrated drug-discovery platform combining
+  AI-driven computational chemistry with structural and biological insight to drug historically
+  intractable protein targets. Acelot publishes no public API, developer portal, SDK or
+  machine-readable specification; its four public GitHub repositories are forks of third-party
+  cheminformatics tooling.
+image: https://static1.squarespace.com/static/6721bd430e24a6572ea4152a/t/6732691e70799e3f6a4e8b71/1731356958733/Acelot-Website-LogoKnockout-111124-v01.png?format=1500w
 url: https://raw.githubusercontent.com/api-evangelist/acelot-inc/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +22,13 @@ created: '2026-09-06'
 modified: '2026-09-06'
 tags:
 - Company
+- Biotechnology
+- Pharmaceuticals
+- Drug Discovery
+- Life Sciences
+- Neurodegenerative Disease
+- Artificial Intelligence
+- Computational Chemistry
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +37,56 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.acelot.com/
+- type: Blog
+  url: https://www.acelot.com/news
+- type: BlogRSS
+  url: https://www.acelot.com/news?format=rss
+- type: GitHubOrganization
+  url: https://github.com/acelot-inc
+- type: LinkedIn
+  url: https://www.linkedin.com/company/acelot-inc./
+- type: x-Publications
+  url: https://www.acelot.com/publications
+- type: x-Team
+  url: https://www.acelot.com/our-team
+- type: DomainSecurity
+  url: security/acelot-inc-domain-security.yml
+- type: LLMsTxt
+  url: llms/acelot-inc-llms.txt
+x-enrichment:
+  date: '2026-09-06'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Acelot is a clinical-stage biopharmaceutical company whose product is a small-molecule
+    therapeutic (ACE-2223), and its Resolute AI drug-discovery platform is described by the
+    company as employed in-house only — acelot.com is a five-page Squarespace marketing site with
+    no developer, docs or API section, and every contract-discovery path returned 404 on both
+    acelot.com and www.acelot.com.
+  evidence:
+  - url: https://www.acelot.com/pipeline-and-platform
+    status: 200
+  - url: https://www.acelot.com/openapi.json
+    status: 404
+  - url: https://www.acelot.com/swagger.json
+    status: 404
+  - url: https://www.acelot.com/api-docs
+    status: 404
+  - url: https://www.acelot.com/graphql
+    status: 404
+  - url: https://www.acelot.com/mcp
+    status: 404
+  - url: https://www.acelot.com/llms.txt
+    status: 404
+  - url: https://www.acelot.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.acelot.com/.well-known/api-catalog
+    status: 404
+  - url: https://github.com/acelot-inc
+    status: 200
+  checked: '2026-09-06'
