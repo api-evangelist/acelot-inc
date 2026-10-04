@@ -1,5 +1,5 @@
 aid: acelot-inc
-name: Acelot, Inc.
+name: Acelot
 description: >-
   Acelot, Inc. is a clinical-stage biopharmaceutical company headquartered in South San Francisco,
   California, developing first-in-class small-molecule therapies for neurodegenerative diseases with
@@ -90,3 +90,4 @@ x-coverage:
   - url: https://github.com/acelot-inc
     status: 200
   checked: '2026-09-06'
+x-legal-name: Acelot, Inc.
